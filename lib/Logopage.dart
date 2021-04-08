@@ -16,50 +16,33 @@ class _LogopageState extends State<Logopage> {
         children: [
           backgroundImage(),
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.only(top: 160.0),
             child: Column(
               children: [
-                DelayedDisplay(
-                  delay: initialDelay,
-                  child: Text(
-                    "Coffee Code",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 35.0,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-                DelayedDisplay(
-                  delay: Duration(seconds: initialDelay.inSeconds + 1),
-                  child: Text(
-                    "World",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 35.0,
-                      color: Colors.white,
+                Padding(
+                  padding: const EdgeInsets.only(left: 8.0),
+                  child: DelayedDisplay(
+                    delay: initialDelay,
+                    child: Image(
+                      image: AssetImage("images/coffee_bean.png"),
+                      height: 170,
+                      width: 170,
                     ),
                   ),
                 ),
                 SizedBox(
-                  height: 30.0,
+                  height: 5.0,
                 ),
-                DelayedDisplay(
-                  delay: Duration(seconds: initialDelay.inSeconds + 2),
-                  child: Container(
-                    width: 200,
-                    height: 50,
-                    decoration: BoxDecoration(
-                        color: Colors.blueAccent,
-                        borderRadius: BorderRadius.circular(30)),
-                    child: Center(
-                      child: Text(
-                        "Subscribe",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
-                        ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 8.0),
+                  child: DelayedDisplay(
+                    delay: Duration(seconds: initialDelay.inSeconds + 1),
+                    child: Text(
+                      "Coffee Code",
+                      style: TextStyle(
+                        fontFamily: "Lora",
+                        fontSize: 32.0,
+                        color: Color(0xffD5CEBF),
                       ),
                     ),
                   ),
