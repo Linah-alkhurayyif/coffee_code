@@ -1,7 +1,6 @@
 //import 'package:coffee_code/Logopage.dart';
 import 'package:flutter/material.dart';
 import 'RegisterPage.dart';
-import 'logoRegisterPage.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,9 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home:
-          //TRegisterPage(),
-          RegisterPage(),
+      home: RegisterPage(),
       //Logopage(),
     );
   }

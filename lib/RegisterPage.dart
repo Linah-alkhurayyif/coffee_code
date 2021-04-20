@@ -1,6 +1,8 @@
 import 'package:coffee_code/logoRegisterPage.dart';
 import 'package:flutter/material.dart';
 
+import 'VerificationRegisterPage.dart';
+
 class RegisterPage extends StatefulWidget {
   @override
   _RegisterPageState createState() => _RegisterPageState();
@@ -108,7 +110,14 @@ class _RegisterPageState extends State<RegisterPage> {
     return Padding(
       padding: const EdgeInsets.only(top: 20),
       child: RaisedButton(
-        onPressed: () {},
+        onPressed: () {
+          setState(() {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => VerificationRegisterPage()));
+          });
+        },
         shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(80.0)),
         padding: EdgeInsets.all(0.0),
