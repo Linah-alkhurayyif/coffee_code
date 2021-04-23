@@ -1,3 +1,4 @@
+import 'package:coffee_code/RegisterPage.dart';
 import 'package:flutter/material.dart';
 import 'package:delayed_display/delayed_display.dart';
 
@@ -8,6 +9,15 @@ class Logopage extends StatefulWidget {
 
 class _LogopageState extends State<Logopage> {
   final Duration initialDelay = Duration(seconds: 1);
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    Future.delayed(Duration(seconds: 6), () {
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => RegisterPage()));
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -16,11 +26,11 @@ class _LogopageState extends State<Logopage> {
         children: [
           backgroundImage(),
           Padding(
-            padding: const EdgeInsets.only(top: 160.0),
+            padding: const EdgeInsets.only(top: 200.0),
             child: Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left: 8.0),
+                  padding: const EdgeInsets.only(left: 10.0),
                   child: DelayedDisplay(
                     delay: initialDelay,
                     child: Image(
