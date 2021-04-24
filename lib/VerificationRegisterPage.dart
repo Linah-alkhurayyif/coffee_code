@@ -166,34 +166,56 @@ class _VerificationRegisterPageState extends State<VerificationRegisterPage> {
 
 Widget flatbuttionRegister() {
   return Padding(
-    padding: const EdgeInsets.only(top: 20),
-    child: RaisedButton(
-      onPressed: () {
-        // setState(() {
-        //   Navigator.push(
-        //       context,
-        //       MaterialPageRoute(
-        //           builder: (context) => VerificationRegisterPage()));
-        // });
-      },
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(80.0)),
-      padding: EdgeInsets.all(0.0),
-      child: Ink(
-        decoration: BoxDecoration(
-            color: Color(0xff252739),
-            borderRadius: BorderRadius.circular(30.0)),
-        child: Container(
-          constraints: BoxConstraints(maxWidth: 300.0, minHeight: 50.0),
-          alignment: Alignment.center,
-          child: Text(
-            "Check",
-            textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.white, fontSize: 20),
-          ),
+      padding: const EdgeInsets.only(top: 20),
+      child: ElevatedButton(
+        child: Text(
+          "     Check      ",
+          style: TextStyle(color: Colors.white, fontSize: 20),
         ),
-      ),
-    ),
-  );
+        style: ElevatedButton.styleFrom(
+          padding: EdgeInsets.only(top: 15, bottom: 15, right: 80, left: 80),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(80.0)),
+          primary: Color(0xff252739),
+          onPrimary: Colors.white,
+        ),
+        onPressed: () {
+          // setState(() {
+          //   Navigator.push(
+          //       context,
+          //       MaterialPageRoute(
+          //           builder: (context) => VerificationRegisterPage()));
+          // });
+        },
+      )
+
+      // RaisedButton(
+      //   onPressed: () {
+      //     // setState(() {
+      //     //   Navigator.push(
+      //     //       context,
+      //     //       MaterialPageRoute(
+      //     //           builder: (context) => VerificationRegisterPage()));
+      //     // });
+      //   },
+      //   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(80.0)),
+      //   padding: EdgeInsets.all(0.0),
+      //   child: Ink(
+      //     decoration: BoxDecoration(
+      //         color: Color(0xff252739),
+      //         borderRadius: BorderRadius.circular(30.0)),
+      //     child: Container(
+      //       constraints: BoxConstraints(maxWidth: 300.0, minHeight: 50.0),
+      //       alignment: Alignment.center,
+      //       child: Text(
+      //         "Check",
+      //         textAlign: TextAlign.center,
+      //         style: TextStyle(color: Colors.white, fontSize: 20),
+      //       ),
+      //     ),
+      //   ),
+      // ),
+      );
 }
 
 Widget buildFormverifingphone() {

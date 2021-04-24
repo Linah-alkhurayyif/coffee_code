@@ -11,7 +11,6 @@ class _LogopageState extends State<Logopage> {
   final Duration initialDelay = Duration(seconds: 1);
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     Future.delayed(Duration(seconds: 6), () {
       Navigator.push(
