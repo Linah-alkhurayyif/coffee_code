@@ -23,12 +23,14 @@ class LogoRegisterPage extends StatelessWidget {
                     SizedBox(
                       height: 280,
                     ),
-                    Container(
-                      height: 100,
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage("images/coffee_bean.png"),
-                          fit: BoxFit.fitHeight,
+                    Expanded(
+                      child: Container(
+                        height: 100,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage("images/coffee_bean.png"),
+                            fit: BoxFit.fitHeight,
+                          ),
                         ),
                       ),
                     ),
