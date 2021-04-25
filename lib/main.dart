@@ -1,4 +1,5 @@
-import 'package:coffee_code/Logopage.dart';
+//import 'package:coffee_code/Logopage.dart';
+import 'package:coffee_code/UserLocation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home: Logopage(),
+      home: UserLocation(),
+      //Logopage(),
     );
   }
 }
